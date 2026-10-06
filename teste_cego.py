@@ -64,7 +64,8 @@ disp_cart = ConfusionMatrixDisplay.from_predictions(
     y_cego, 
     y_pred_cart, 
     display_labels=['Verde (0)', 'Amarelo (1)', 'Vermelho (2)', 'Preto (3)'],
-    cmap='viridis'
+    cmap='viridis',
+    normalize='true'
 )
 disp_cart.ax_.set_title("Matriz de Confusão - Teste Cego (CART)")
 plt.show()
@@ -76,7 +77,8 @@ disp_rn = ConfusionMatrixDisplay.from_predictions(
     y_cego, 
     y_pred_rn, 
     display_labels=['Verde (0)', 'Amarelo (1)', 'Vermelho (2)', 'Preto (3)'],
-    cmap='viridis'
+    cmap='viridis',
+    normalize='true'
 )
 disp_rn.ax_.set_title("Matriz de Confusão - Teste Cego (Rede Neural)")
 plt.show()
